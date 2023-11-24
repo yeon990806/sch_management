@@ -12,9 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     height: 100vh;
     font-family: 'Pretendard', sans-serif;
 
-    background: ${props => props.theme.style.background};
+    #root {
+      height: 100%;
+    }
 
     section {
+      height: 100%;
       padding: 16px;
     }
   }
