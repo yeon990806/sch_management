@@ -1,4 +1,5 @@
 import { ChangeEvent, ReactNode } from "react";
+import { Color } from "../defines";
 import styled from "styled-components";
 
 interface StyledInputProps {
@@ -69,7 +70,7 @@ const StyledInputContainer = styled.div<StyledInputProps>`
   align-items: center;
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #808080;
+  border: 1px solid ${Color.borderColor};
 `;
 const StyledInput = styled.input`
   flex: 1;
@@ -77,7 +78,7 @@ const StyledInput = styled.input`
   outline: none;
   background: none;
   font-size: 16px;
-  color: #363636;
+  color: ${Color.textBlack};
 `;
 
 StyledInput.defaultProps = {
